@@ -44,6 +44,8 @@ HEAD指向的版本就是当前版本，因此，Git允许我们在版本的历�
 
 现在你有两个选择:
 一是确实要从版本库中删除该文件，那就用命令git rm删掉，并且git commit：
+$ git rm test.txt
+$ git commit -m "remove test.txt"
 另一种情况是删错了，因为版本库里还有呢，所以可以很轻松地把误删的文件恢复到最新版本：
 
 $ git checkout -- test.txt
