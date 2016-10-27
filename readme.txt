@@ -25,3 +25,6 @@ $ git add readme.txt
 git status告诉我们，将要被提交的修改包括readme.txt，下一步，就可以放心地提交了：
 
 $ git commit -m "add distributed"
+
+Git is a distributed version control system.
+Git is free software distributed under the GPL.
