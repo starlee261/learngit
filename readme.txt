@@ -21,7 +21,6 @@ $ git add readme.txt
 同样没有任何输出。在执行第二步git commit之前，我们再运行git status看看当前仓库的状态：
 
 git status告诉我们，将要被提交的修改包括readme.txt，下一步，就可以放心地提交了：
-
 $ git commit -m "任意起名"
 
 HEAD指向的版本就是当前版本，因此，Git允许我们在版本的历史之间穿梭，使用命令git reset --hard commit_id。
@@ -30,3 +29,5 @@ HEAD指向的版本就是当前版本，因此，Git允许我们在版本的历�
 穿梭前，用git log可以查看提交历史，以便确定要回退到哪个版本。
 
 要重返未来，用git reflog查看命令历史，以便确定要回到未来的哪个版本。
+
+提交后，用git diff HEAD -- readme.txt命令可以查看工作区和版本库里面最新版本的区别：
