@@ -4,11 +4,11 @@
 	$ mkdir learngit
 	$ cd learngit
 	$ pwd
-	/Users/michael/learngit
+	C:/Users/lee/learngit
 	pwd命令用于显示当前目录。在我的电脑上，这个仓库位于C:/Users/lee/learngit
 	第二步，通过git init命令把这个目录变成Git可以管理的仓库：
 	$ git init
-	瞬间Git就把仓库建好了，而且告诉你是一个空的仓库（empty Git repository），细心的读者可以发现当前目录下多了一个.git的目录（）隐藏文件，这个目录是Git来跟踪管理版本库的，没事千万不要手动修改这个目录里面的文件，不然改乱了，就把Git仓库给破坏了。
+	瞬间Git就把仓库建好了，而且告诉你是一个空的仓库（empty Git repository），细心的读者可以发现当前目录下多了一个.git的目录（隐藏文件):这个目录是Git来跟踪管理版本库的，没事千万不要手动修改这个目录里面的文件，不然改乱了，就把Git仓库给破坏了。
 
 添加文件到Git仓库，分两步：
 
@@ -81,7 +81,7 @@ git reset --hard commit_id 时光机穿梭
 
 	现在，我们根据GitHub的提示，在本地的learngit仓库下运行命令：
 	$ git remote add origin https://github.com/starlee261/learngit.git
-	请千万注意，把上面的michaelliao替换成你自己的GitHub账户名，否则，你在本地关联的就是我的远程库，关联没有问题，但是你以后推送是推不上去的，因为你的SSH Key公钥不在我的账户列表中。
+	请千万注意，把上面的starlee261替换成你自己的GitHub账户名，否则，你在本地关联的就是我的远程库，关联没有问题，但是你以后推送是推不上去的，因为你的SSH Key公钥不在我的账户列表中。
 
 	添加后，远程库的名字就是origin，这是Git默认的叫法，也可以改成别的，但是origin这个名字一看就知道是远程库。
 
